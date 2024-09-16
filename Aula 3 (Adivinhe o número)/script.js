@@ -4,19 +4,29 @@ function gerarNumeroAleatorio(){
 }
 
 function jogar(){
+
+
     const pegar_numero_aleatorio = gerarNumeroAleatorio()
-    console.log(pegar_numero_aleatorio)
+    alert(pegar_numero_aleatorio)
+    let palpite = ""
+    let tentativas = 3;
+
 
     do{
-        const palpite = parseInt(prompt('Adivinhe o Número').value);
+        
+        palpite = parseInt(prompt('Adivinhe o Número'));
 
-        if(palpite != pegar_numero_aleatorio){
-            alert("Putz! Você errou...")
+        if ( palpite != pegar_numero_aleatorio) {
+            tentativas--;
+            alert(`Você errou... Você ainda tem ${tentativas} tentativa(s).`);
+        } 
+        else {
+            alert(`Você acertou! O número era ${pegar_numero_aleatorio}.`);
+            return
         }
-        else{
-            alert("parabéns!")
-        }
+
     }
-    while (palpite != pegar_numero_aleatorio)
+    while (tentativas > 0)
+   
 }
 jogar()
