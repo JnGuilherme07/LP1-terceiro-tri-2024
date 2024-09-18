@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura da tela */
+    margin: 0;
+}
+
+.container {
+    text-align: center; /* Centraliza texto e botões dentro do container */
+}
+
+.texto {
+    margin-bottom: 10px; /* Espaço entre o texto e o botão */
+    font-size: 18px; /* Tamanho da fonte do texto */
+}
+
+.btn {
+    padding: 10px 20px; /* Tamanho do botão */
+    font-size: 16px; /* Tamanho da fonte */
+}
