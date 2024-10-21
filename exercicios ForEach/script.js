@@ -48,4 +48,25 @@ numeros.forEach(function (Pegarnumero) {
     console.log(numeroMaior);
 
 
+//exercicio 4
+let palavras = frase.split(" ");
+let contador = 0;
+let numerosM = [];
 
+palavras.forEach(() => {
+  if (maisdez > 10)
+    numerosM.push(maisdez)
+
+  contador++;
+});
+
+console.log(`Número de palavras: ${contador}`);
+
+
+//exercicio 5
+const nomes = ["ana", "carlos", "maria"];
+let nomesM = []
+
+nomes.forEach(function (Maiusculo){
+console.log(Maiusculo.toUpperCase())
+})
