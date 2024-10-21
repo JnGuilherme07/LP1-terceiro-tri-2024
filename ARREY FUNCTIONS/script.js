@@ -10,3 +10,12 @@ function adicionar(){
 
     console.log(personagens)
 }
+
+//-----------------------ForEach---------------------------------
+
+const numeros = [2,4,6,8]
+
+numeros.forEach(function (pegaNumero)){
+    console.log(pagaNumero)
+    //saida: 2,4,6,8
+}
